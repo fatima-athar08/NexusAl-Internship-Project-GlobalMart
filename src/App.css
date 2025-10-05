@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+/* Page container for consistent padding */
+.page-container {
+    padding-top: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: calc(100vh - 80px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style for active navigation links */
+.nav-links a.active-link {
+    color: var(--accent-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* --- Global Section Heading Style --- */
+.section-heading {
+    text-align: center;
+    font-size: 3rem; /* Increased to match the main heading */
+    margin-bottom: 2rem; /* Adjusted for better spacing */
+    color: var(--accent-color);
+    line-height: 1.2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* --- Global Button Styles --- */
+.btn {
+    padding: 10px 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--primary-bg);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-bg);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-heading {
+        font-size: 1.8rem;
+    }
 }

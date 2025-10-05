@@ -1,0 +1,43 @@
+.shipping-page .section-heading {
+    margin-bottom: 3rem;
+}
+
+.shipping-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--input-bg);
+    color: var(--primary-text);
+    font-size: 1rem;
+}
+
+.form-group .error {
+    color: #fca5a5;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.shipping-form .btn {
+    width: 100%;
+    margin-top: 1rem;
+}

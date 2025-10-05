@@ -1,0 +1,50 @@
+/* Reusing login styles for consistency */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    min-height: 100vh;
+}
+
+.signup-container {
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid var(--border-color);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.signup-container .logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.signup-container .logo img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.signup-container h2 {
+    color: var(--primary-text);
+}
+
+.login-link {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.login-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

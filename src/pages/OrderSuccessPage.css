@@ -1,0 +1,62 @@
+.order-success-page {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.success-icon {
+    font-size: 5rem;
+    color: #4ade80;
+    margin-bottom: 1.5rem;
+}
+
+.order-success-page .section-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* --- Order Receipt --- */
+.order-receipt {
+    max-width: 500px;
+    margin: 0 auto 2.5rem;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.order-receipt h3 {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.order-receipt .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+.order-receipt .summary-row span:last-child {
+    font-weight: bold;
+}
+
+.order-receipt p {
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-top: 1.5rem;
+}
+
+
+.success-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (max-width: 480px) {
+    .success-actions {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,28 @@
+/* Deals Section */
+.deal-category {
+    margin-bottom: 4rem;
+}
+
+.deal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.deal-header h3 {
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+
+.deal-timer {
+    background: var(--accent-color);
+    color: var(--primary-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+}

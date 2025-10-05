@@ -1,0 +1,134 @@
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    min-height: 100vh;
+}
+
+.login-container {
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+    animation: fadeIn 0.8s ease-in-out;
+    border: 1px solid var(--border-color);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-container .logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-container .logo img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.login-container h2 {
+    color: var(--primary-text);
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.forgot-password {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: var(--hover-color);
+}
+
+.btn.btn-primary {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.social-login {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.social-login p {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    position: relative;
+}
+
+.social-login p::before, .social-login p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 35%;
+    height: 1px;
+    background: var(--border-color);
+}
+.social-login p::before { left: 0; }
+.social-login p::after { right: 0; }
+
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-btn {
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+    color: var(--primary-text);
+}
+
+.social-btn:hover {
+    border-color: var(--accent-color);
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--accent-color);
+}
+
+.signup-link {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.signup-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}

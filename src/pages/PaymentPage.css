@@ -1,0 +1,90 @@
+.payment-page .section-heading {
+    margin-bottom: 3rem;
+}
+
+.payment-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.payment-form, .card-details-form {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.payment-options {
+    margin-bottom: 1.5rem;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    background: var(--input-bg);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 1rem;
+    transform: scale(1.2);
+}
+
+.payment-option label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.payment-form .btn {
+    width: 100%;
+}
+
+/* --- Card Details Form --- */
+.card-details-form .form-row {
+    display: flex;
+    gap: 1rem;
+}
+.card-details-form .form-group {
+    margin-bottom: 1.5rem;
+}
+.card-details-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.card-details-form input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--input-bg);
+    color: var(--primary-text);
+    font-size: 1rem;
+}
+.card-details-form .error {
+    color: #fca5a5;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.form-actions .btn {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .payment-content {
+        grid-template-columns: 1fr;
+    }
+}
